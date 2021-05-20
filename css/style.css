@@ -1,6 +1,8 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(253, 252, 249);}
+    background-color: rgb(253, 252, 249);
+  
+  }
 
 
 header{
@@ -14,6 +16,8 @@ header nav ul li  {display: inline;
     padding: 37px;
     /* margin-top: 25px; */
     color: rgb(114, 119, 121);
+    position: relative;
+
 }
 header nav ul li a{
     color: antiquewhite;
@@ -21,29 +25,56 @@ header nav ul li a{
 }
 
 
+ul li{
+  position: relative;
+bottom: 25px; 
+margin-left: 30px;
+}
+
 
 section:first-child article:first-child img {
-    width: 1000px;
+     /* width: 1000px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
+    margin-left: 175px;
+     margin-right: 150px; 
+    margin-bottom: 30px;  */
+    
 
-section:first-child article:last-child {
-    margin-right: auto;
+width: 960px;  
     display: block;
     margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 30px;
+
+}
+section:first-child  article:nth-child(2)  
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 width: 970px; 
 text-align: center;
-
 margin-bottom: 30px;
 }
-section:first-child  article:last-child img:nth-child(2){
-padding-right: 31px;
-padding-left: 31px;
-}
 
+/* section:first-child article:last-child {
+  
+  position: relative;
+  
+  left: 210px;
+
+
+
+
+
+margin-bottom: 30px;
+
+
+
+
+
+
+} */
 section:last-child {
     display: block;
     max-width: 1000px;
@@ -68,14 +99,16 @@ section:last-child article:last-child {
     height: 400px;
     }
 
- button{
+ button:hover {
     display: inline-block;
     background-color: black;
-    color: rgb(250, 249, 244);
-    padding: 10px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
     max-height: 5cm;
     cursor: pointer;
-    font-size: 15px;}
+    transition:350ms;
+    border: radius 5px;
+    font-size: 14px;}
 
 
 
@@ -88,28 +121,6 @@ height: 150px;
     color:#4c5053;
 }
 
-#nav {
-    position: absolute;
-    left: 0px;
-    height: 40px;
-    background-color: #2C64B4;
-    width: 100%;
-    margin: 0 auto;
-  }
-  #nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  #nav ul li {
-    margin: 0;
-    padding: 0;
-    float: left;
-  }
-  #nav ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    color: #FFF;
-    text-align: center;
-  }
+h2{
+  font-weight: bolder;
+}
